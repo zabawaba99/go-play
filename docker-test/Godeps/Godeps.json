@@ -1,0 +1,67 @@
+{
+	"ImportPath": "github.com/MrGossett/go-play/docker-test",
+	"GoVersion": "go1.3.1",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.6.2-15-gd2f9ffa",
+			"Rev": "d2f9ffa1d9cf25b25191b221229effac1b6de526"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/archive",
+			"Comment": "v1.4.1-610-g9de604a",
+			"Rev": "9de604ad68033d08721ce61db7300cee338837e2"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/fileutils",
+			"Comment": "v1.4.1-610-g9de604a",
+			"Rev": "9de604ad68033d08721ce61db7300cee338837e2"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/ioutils",
+			"Comment": "v1.4.1-610-g9de604a",
+			"Rev": "9de604ad68033d08721ce61db7300cee338837e2"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/pools",
+			"Comment": "v1.4.1-610-g9de604a",
+			"Rev": "9de604ad68033d08721ce61db7300cee338837e2"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/promise",
+			"Comment": "v1.4.1-610-g9de604a",
+			"Rev": "9de604ad68033d08721ce61db7300cee338837e2"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/pkg/system",
+			"Comment": "v1.4.1-610-g9de604a",
+			"Rev": "9de604ad68033d08721ce61db7300cee338837e2"
+		},
+		{
+			"ImportPath": "github.com/docker/docker/vendor/src/code.google.com/p/go/src/pkg/archive/tar",
+			"Comment": "v1.4.1-610-g9de604a",
+			"Rev": "9de604ad68033d08721ce61db7300cee338837e2"
+		},
+		{
+			"ImportPath": "github.com/fsouza/go-dockerclient",
+			"Rev": "bc54f3734b9b098e24680d5ad686f602bc152df4"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/internal",
+			"Rev": "61e2910408efd40dafb3c7d856a4cf8aeb5fb1c6"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/redis",
+			"Rev": "61e2910408efd40dafb3c7d856a4cf8aeb5fb1c6"
+		},
+		{
+			"ImportPath": "github.com/kr/pretty",
+			"Comment": "go.weekly.2011-12-22-26-gcb0850c",
+			"Rev": "cb0850c1681cbca3233e84f7e6ec3e4c3f352085"
+		},
+		{
+			"ImportPath": "github.com/kr/text",
+			"Rev": "6807e777504f54ad073ecef66747de158294b639"
+		}
+	]
+}
