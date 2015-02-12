@@ -109,26 +109,37 @@ func getRedis(t *testing.T, c *d.Container) *Redis {
 	return r
 }
 
-func TestNewRedis(t *testing.T) {
-	t.Parallel()
+// func TestNewRedis(t *testing.T) {
+// 	t.Parallel()
 
-	client := newClient(t)
-	c := startContainer(t, client, "redis")
-	defer client.RemoveContainer(d.RemoveContainerOptions{ID: c.ID, Force: true})
+// 	client := newClient(t)
+// 	c := startContainer(t, client, "redis")
+// 	defer client.RemoveContainer(d.RemoveContainerOptions{ID: c.ID, Force: true})
 
-	getRedis(t, c)
-}
+// 	getRedis(t, c)
+// }
 
-func TestPing(t *testing.T) {
-	t.Parallel()
+// func TestPing(t *testing.T) {
+// 	t.Parallel()
 
-	client := newClient(t)
-	c := startContainer(t, client, "redis")
-	defer client.RemoveContainer(d.RemoveContainerOptions{ID: c.ID, Force: true})
+// 	client := newClient(t)
+// 	c := startContainer(t, client, "redis")
+// 	defer client.RemoveContainer(d.RemoveContainerOptions{ID: c.ID, Force: true})
 
-	r := getRedis(t, c)
+// 	r := getRedis(t, c)
 
-	if err := r.ping(); err != nil {
-		t.Fatalf("error pinging db: %s", err)
+// 	if err := r.ping(); err != nil {
+// 		t.Fatalf("error pinging db: %s", err)
+// 	}
+// }
+
+func TestMe(t *testing.T) {
+	c, err := NewTLSClient(dockerHost, dockerCertPath)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if err := c.Run("scratch", ""); err != nil {
+		t.Fatal(err)
 	}
 }
